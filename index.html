@@ -15,6 +15,10 @@
     <style>
         .asteri-gradient {
             background: -webkit-linear-gradient(45deg, #330867, #30cfd0);
+            /* background-image: url('assets/img/desktop.jpg');
+            background-image: url("https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_960_720.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;*/
         }
 
         .asteri-font {
@@ -23,9 +27,14 @@
 
         html body nav div.p-2.border-bottom.w-100.sticky-top.bg-light div.container ul#tabs-header.nav li.nav-item a.active {
             text-decoration: underline;
-
-            /*here goes your background color*/
+            color: #330867;
         }
+
+        /*html body div.asteri-gradient.pt-lg-5 div.container div.row.pt-5.align-items-start div.col-lg-8.col-sm-12.col-md-12.asteri-font button.btn.btn-primary.btn-lg {
+            color: white;
+            background-color: #330867;
+            border: solid 1px #330867;
+        }*/
     </style>
 
     <script>
@@ -34,6 +43,10 @@
             event.target // newly activated tab
             event.relatedTarget // previous active tab
         })
+
+        function goToRegister() {
+            window.open("https://asteri-users-dev.web.app/register?space=620d202ffa5534e3941367a7&typeParticipant=negocios");
+        }
 
     </script>
 </head>
@@ -44,11 +57,12 @@
             <div class="row pt-5 align-items-start">
                 <div class="col-lg-8 col-sm-12 col-md-12 asteri-font">
                     <p class="fs-1 fw-bold">INMSOFT-2022 Misión Softlanding de APPS.CO</p>
-                    <button type="button" class="btn btn-outline-light btn-lg">Registrate ahora</button>
+                    <button type="button" onclick="goToRegister()" class="btn btn-outline-light btn-lg">Registrate
+                        ahora</button>
                 </div>
                 <div class="col-lg-4 col-sm-12 col-md-12">
                     <p class="asteri-font fs-5">Ofrecido por:</p>
-                    <img style="width: 200px; height:auto" src="assets/img/inn.png">
+                    <img style="width: 200px; height:auto" src="assets/img/acelerex.png">
 
                 </div>
             </div>
@@ -77,7 +91,7 @@
 
         <div class="tab-content" id="tabs-content">
             <div class="tab-pane fade show active" id="introduccion" role="tabpanel" aria-labelledby="tab-introduccion">
-                <div class="container pt-3" style="text-align: justify">
+                <div class="container pt-lg-3 ps-xs-2 ps-md-2 " style="text-align: justify">
                     <br>
                     <h2>Introducción</h2>
                     <br>
@@ -112,7 +126,7 @@
 
                     <p>Asesorías especializadas
                         Talleres
-                        Inmersión en un país de América
+                        Inmersión en un país de América</p>
 
                 </div>
             </div>
